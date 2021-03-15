@@ -4,7 +4,7 @@ import Bg from "../assets/imgs/bg.jpg";
 export default makeStyles((theme) => ({
   root: {
     minHeight: "100vh",
-    backgroundImage: `url(${Bg})`,
+    // backgroundImage: `url(${Bg})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundAttachment: "fixed",

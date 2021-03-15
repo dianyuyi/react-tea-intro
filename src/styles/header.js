@@ -5,7 +5,7 @@ export default makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "60px",
+    // height: "60px",
     fontFamily: "Noto Serif TC, serif",
   },
   appbar: {
@@ -17,6 +17,8 @@ export default makeStyles((theme) => ({
   },
   appbarTitle: {
     flexGrow: "1",
+    color: "#fff",
+    textDecoration: "none",
   },
   icon: {
     color: "#fff",

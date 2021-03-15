@@ -17,6 +17,7 @@ const Hero = () => {
         in={checked}
         {...(checked ? { timeout: 1000 } : {})}
         collapsedHeight={50}
+        style={{ zIndex: "3" }}
       >
         <div className={classes.container}>
           <h1 className={classes.title}>
