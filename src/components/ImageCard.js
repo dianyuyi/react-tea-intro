@@ -7,7 +7,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import { Collapse } from "@material-ui/core";
 
-const ImageCard = ({ place, checked }) => {
+const ImageCard = ({ teaType, checked }) => {
   const classes = useStyles();
 
   return (
@@ -15,8 +15,8 @@ const ImageCard = ({ place, checked }) => {
       <Card className={classes.root}>
         <CardMedia
           className={classes.media}
-          image={place.imageUrl}
-          title={place.title}
+          image={teaType.imageUrl}
+          title={teaType.title}
         />
         <CardContent>
           <Typography
@@ -25,7 +25,7 @@ const ImageCard = ({ place, checked }) => {
             component="h1"
             className={classes.title}
           >
-            {place.title}
+            {teaType.title}
           </Typography>
           <Typography
             variant="body2"
@@ -33,7 +33,7 @@ const ImageCard = ({ place, checked }) => {
             component="p"
             className={classes.desc}
           >
-            {place.description}
+            {teaType.description}
           </Typography>
         </CardContent>
       </Card>

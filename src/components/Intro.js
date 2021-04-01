@@ -1,7 +1,7 @@
 import React from "react";
 import useStyles from "../styles/intro";
 import ImageCard from "./ImageCard";
-import places from "../data/data";
+import teaTypes from "../data/data";
 import useWindowPosition from "../hook/useWindowPosition";
 
 const Intro = () => {
@@ -9,8 +9,10 @@ const Intro = () => {
   const checked = useWindowPosition("header");
   return (
     <div className={classes.root} id="place-to-visit">
-      <ImageCard place={places[0]} checked={checked} />
-      <ImageCard place={places[1]} checked={checked} />
+      <ImageCard teaType={teaTypes[0]} checked={checked} />
+      <ImageCard teaType={teaTypes[1]} checked={checked} />
+      <ImageCard teaType={teaTypes[2]} checked={checked} />
+      <ImageCard teaType={teaTypes[3]} checked={checked} />
     </div>
   );
 };
